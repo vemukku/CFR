@@ -1,0 +1,9 @@
+#playbook.yml
+---
+- name:
+  hosts: devhost
+  roles:
+    - php
+    - apache
+    - nginx
+    
