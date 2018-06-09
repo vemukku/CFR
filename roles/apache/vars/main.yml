@@ -1,0 +1,8 @@
+apache_install_dir: /etc/httpd
+apache_conf_dir: /etc/httpd/conf
+source_conf_dir: /Dev-Ansible/roles/apache/templates
+source_static_files: /Dev-Ansible/roles/apache/templates
+apache_static_files: /var/www/apachedomain.com/httpd.conf
+apache_document_root_dir: /var/www/apachedomain.com
+apache_user: apache
+apache_group: apache
