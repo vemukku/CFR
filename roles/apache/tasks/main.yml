@@ -1,0 +1,26 @@
+
+# INSTALL AND CONFIGURE APACHE
+- name: Install and Configure Apache 
+  yum: name=httpd update_cache=yes state=latest
+  notify:
+    - start apache
+  
+- name: Create Document Root Directory
+  file: path={{ apache_document_root_dir }} state=directory user={{ apache_user }} group={{ apache_group }}
+  tags:
+    - apache
+    - apache_configuration
+ 
+- name: Copying the static file
+  template: src={{ source_static_files }}/{{ php_document_index }} dest=(( apache_static_files))
+            user={{ apache_user }} group={{ apache_group }} mode=0644
+            
+            
+- name: Copy and set httpd configuration
+  template: src={{ source_conf_dir }}/httpd.conf.j2 dest=(( apache_conf_dir ))/httpd.conf force=yes
+  tags:
+    - apache
+    - apache_configuration
+  notify: 
+    - restart apache
+ 
