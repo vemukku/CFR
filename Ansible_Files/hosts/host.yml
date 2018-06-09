@@ -1,0 +1,12 @@
+[devhost]
+xy.x.z.xyz ansible_ssh_user=centos
+#####################
+#example.com
+
+#[Nginx]
+#one.example.com
+#two.example.com
+
+#[Apache]
+#foo.example.com
+#bar.example.com
