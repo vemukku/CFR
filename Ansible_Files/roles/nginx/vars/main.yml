@@ -1,0 +1,8 @@
+nginx_install_dir: /etc/nginx
+nginx_conf_dir: /etc/nginx/conf.d
+source_conf_dir: /Dev-Ansible/roles/nginx/templates
+source_static_files: /Dev-Ansible/roles/nginx/templates
+nginx_static_files: /var/www/html
+nginx_document_root_dir: /var/www/html
+nginx_user: nginx
+nginx_group: nginx
