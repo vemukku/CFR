@@ -24,7 +24,7 @@ The LAMP stack (Linux, Apache, MySQL, and PHP) has been a complete web solution 
 
 **Apache Drawbacks:**
 
-Apache falls short when it comes to serving plenty of static files. However, the latest version of Apache has resolved this issue considerably.  Moreover, Apache, having a process-based mechanism, is definitely a heavy memory web server.
+Apache falls short when it comes to serving plenty of static files. However, the latest version of Apache has resolved this issue considerably.  Moreover, Apache, having a process-based mechanism, is definitely a heavy memory web server
 
 **Nginx Drawbacks:**
 
